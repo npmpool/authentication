@@ -10,5 +10,3 @@ var Passport = require('./lib/authenticator');
  * @api public
  */
 exports = module.exports = new Passport();
-
-exports.Strategy = require('./lib/strategy');
