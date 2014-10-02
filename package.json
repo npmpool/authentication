@@ -1,0 +1,29 @@
+{
+  "name": "authentication",
+  "version": "0.0.0",
+  "description": "just like passport",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:npmpool/authentication.git"
+  },
+  "keywords": [
+    "passport",
+    "authentication"
+  ],
+  "author": {
+    "name": "lijinchao2007"
+  },
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/npmpool/authentication/issues"
+  },
+  "homepage": "https://github.com/npmpool/authentication",
+  "readme": "ERROR: No README data found!",
+  "_id": "authentication@0.0.0",
+  "_shasum": "450c184422de211ee7879fcea2b19bf461b0b534",
+  "_from": "authentication@*"
+}
