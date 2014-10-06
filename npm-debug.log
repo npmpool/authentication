@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'F:\\nodejs\\\\node.exe',
+1 verbose cli   'F:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.0.2
+3 info using node@v0.10.22
+4 verbose node symlink F:\nodejs\\node.exe
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add spec="." args=[".",null]
+8 verbose parsed spec { raw: '.',
+8 verbose parsed spec   scope: null,
+8 verbose parsed spec   name: null,
+8 verbose parsed spec   rawSpec: '.',
+8 verbose parsed spec   spec: 'E:\\DCJServer\\webserver_nodejs\\node_modules\\authentication',
+8 verbose parsed spec   type: 'local' }
+9 verbose cache add local package E:\DCJServer\webserver_nodejs\node_modules\authentication
+10 silly lockFile 3a52ce78- .
+11 verbose lock . C:\Users\Administrator\AppData\Roaming\npm-cache\3a52ce78-.lock
+12 verbose tar pack [ 'C:\\Users\\Administrator\\AppData\\Roaming\\npm-cache\\authentication\\0.0.1\\package.tgz',
+12 verbose tar pack   '.' ]
+13 verbose tarball C:\Users\Administrator\AppData\Roaming\npm-cache\authentication\0.0.1\package.tgz
+14 verbose folder .
+15 info prepublish authentication@0.0.1
+16 silly lockFile 1f1177db-tar tar://.
+17 verbose lock tar://. C:\Users\Administrator\AppData\Roaming\npm-cache\1f1177db-tar.lock
+18 silly lockFile 58342a82-authentication-0-0-1-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\authentication\0.0.1\package.tgz
+19 verbose lock tar://C:\Users\Administrator\AppData\Roaming\npm-cache\authentication\0.0.1\package.tgz C:\Users\Administrator\AppData\Roaming\npm-cache\58342a82-authentication-0-0-1-package-tgz.lock
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 1f1177db-tar tar://.
+22 silly lockFile 58342a82-authentication-0-0-1-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\authentication\0.0.1\package.tgz
+23 silly lockFile 58342a82-authentication-0-0-1-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\authentication\0.0.1\package.tgz
+24 silly lockFile ca42200f-che-authentication-0-0-1-package C:\Users\Administrator\AppData\Roaming\npm-cache\authentication\0.0.1\package
+25 verbose lock C:\Users\Administrator\AppData\Roaming\npm-cache\authentication\0.0.1\package C:\Users\Administrator\AppData\Roaming\npm-cache\ca42200f-che-authentication-0-0-1-package.lock
+26 silly lockFile ca42200f-che-authentication-0-0-1-package C:\Users\Administrator\AppData\Roaming\npm-cache\authentication\0.0.1\package
+27 silly lockFile ca42200f-che-authentication-0-0-1-package C:\Users\Administrator\AppData\Roaming\npm-cache\authentication\0.0.1\package
+28 silly lockFile 3a52ce78- .
+29 silly lockFile 3a52ce78- .
+30 silly publish { name: 'authentication',
+30 silly publish   version: '0.0.1',
+30 silly publish   description: 'just like passport',
+30 silly publish   main: 'index.js',
+30 silly publish   scripts: { test: 'node ./test/index.js' },
+30 silly publish   repository:
+30 silly publish    { type: 'git',
+30 silly publish      url: 'git@github.com:npmpool/authentication.git' },
+30 silly publish   keywords: [ 'passport', 'authentication' ],
+30 silly publish   author: { name: 'lijinchao2007' },
+30 silly publish   license: 'BSD-2-Clause',
+30 silly publish   bugs: { url: 'https://github.com/npmpool/authentication/issues' },
+30 silly publish   homepage: 'https://github.com/npmpool/authentication',
+30 silly publish   readme: 'ERROR: No README data found!',
+30 silly publish   _id: 'authentication@0.0.1',
+30 silly publish   _shasum: '5666cb78d49d0fbd92bf49412e6485c32e29f7e0',
+30 silly publish   _from: '.',
+30 silly publish   gitHead: '4ae2905f5573da0fb4a866858f3df4a9127d091e' }
+31 verbose mapToRegistry name authentication
+32 verbose mapToRegistry uri https://registry.npmjs.org/authentication
+33 verbose publish registryBase https://registry.npmjs.org/
+34 verbose request on initialization, where is /authentication
+35 verbose request after pass 1, where is /authentication
+36 verbose request url raw /authentication
+37 verbose request resolving registry [ 'https://registry.npmjs.org/', './authentication' ]
+38 verbose request after pass 2, where is https://registry.npmjs.org/authentication
+39 verbose request sending authorization for write operation
+40 info attempt registry request try #1 at 15:08:43
+41 verbose request id e1daa9aaa0190536
+42 http request PUT https://registry.npmjs.org/authentication
+43 http 403 https://registry.npmjs.org/authentication
+44 verbose headers { date: 'Thu, 02 Oct 2014 07:08:48 GMT',
+44 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+44 verbose headers   'content-type': 'application/json',
+44 verbose headers   'cache-control': 'max-age=60',
+44 verbose headers   'content-length': '2181',
+44 verbose headers   'accept-ranges': 'bytes',
+44 verbose headers   via: '1.1 varnish',
+44 verbose headers   'x-served-by': 'cache-ty68-TYO',
+44 verbose headers   'x-cache': 'MISS',
+44 verbose headers   'x-cache-hits': '0',
+44 verbose headers   'x-timer': 'S1412233728.467582,VS0,VE445',
+44 verbose headers   'keep-alive': 'timeout=10, max=50',
+44 verbose headers   connection: 'Keep-Alive' }
+45 error publish Failed PUT 403
+46 verbose stack Error: forbidden cannot modify pre-existing version: 0.0.1
+46 verbose stack old={"name":"authentication","version":"0.0.1","description":"just like passport","main":"index.js","scripts":{"test":"node ./test/index.js"},"repository":{"type":"git","url":"git@github.com:npmpool/authentication.git"},"keywords":["passport","authentication"],"author":{"name":"lijinchao2007"},"license":"BSD-2-Clause","bugs":{"url":"https://github.com/npmpool/authentication/issues"},"homepage":"https://github.com/npmpool/authentication","_id":"authentication@0.0.1","_shasum":"bb10daa92a85b797adf5d9b27c8795e679f34def","_from":".","gitHead":"4ba236211b78875468778e48c46449e42b331be9","_npmVersion":"2.0.2","_nodeVersion":"0.10.22","_npmUser":{"name":"lijinchao2007","email":"lijinchao2007@163.com"},"maintainers":[{"name":"lijinchao2007","email":"lijinchao2007@163.com"}],"dist":{"shasum":"bb10daa92a85b797adf5d9b27c8795e679f34def","tarball":"http://registry.npmjs.org/authentication/-/authentication-0.0.1.tgz"}}
+46 verbose stack new={"name":"authentication","version":"0.0.1","description":"just like passport","main":"index.js","scripts":{"test":"node ./test/index.js"},"repository":{"type":"git","url":"git@github.com:npmpool/authentication.git"},"keywords":["passport","authentication"],"author":{"name":"lijinchao2007"},"license":"BSD-2-Clause","bugs":{"url":"https://github.com/npmpool/authentication/issues"},"homepage":"https://github.com/npmpool/authentication","readme":"ERROR: No README data found!","_id":"authentication@0.0.1","_shasum":"5666cb78d49d0fbd92bf49412e6485c32e29f7e0","_from":".","gitHead":"4ae2905f5573da0fb4a866858f3df4a9127d091e","_npmVersion":"2.0.2","_nodeVersion":"0.10.22","_npmUser":{"name":"lijinchao2007","email":"lijinchao2007@163.com"},"maintainers":[{"name":"lijinchao2007","email":"lijinchao2007@163.com"}],"dist":{"shasum":"5666cb78d49d0fbd92bf49412e6485c32e29f7e0","tarball":"http://registry.npmjs.org/authentication/-/authentication-0.0.1.tgz"}}: authentication
+46 verbose stack     at RegClient.<anonymous> (F:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:260:14)
+46 verbose stack     at Request._callback (F:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:197:65)
+46 verbose stack     at Request.self.callback (F:\nodejs\node_modules\npm\node_modules\request\request.js:237:22)
+46 verbose stack     at Request.EventEmitter.emit (events.js:98:17)
+46 verbose stack     at Request.<anonymous> (F:\nodejs\node_modules\npm\node_modules\request\request.js:1146:14)
+46 verbose stack     at Request.EventEmitter.emit (events.js:117:20)
+46 verbose stack     at IncomingMessage.<anonymous> (F:\nodejs\node_modules\npm\node_modules\request\request.js:1097:12)
+46 verbose stack     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+46 verbose stack     at _stream_readable.js:920:16
+46 verbose stack     at process._tickCallback (node.js:415:13)
+47 verbose statusCode 403
+48 verbose pkgid authentication
+49 verbose cwd E:\DCJServer\webserver_nodejs\node_modules\authentication
+50 error Windows_NT 6.1.7600
+51 error argv "F:\\nodejs\\\\node.exe" "F:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+52 error node v0.10.22
+53 error npm  v2.0.2
+54 error code E403
+55 error forbidden cannot modify pre-existing version: 0.0.1
+55 error old={"name":"authentication","version":"0.0.1","description":"just like passport","main":"index.js","scripts":{"test":"node ./test/index.js"},"repository":{"type":"git","url":"git@github.com:npmpool/authentication.git"},"keywords":["passport","authentication"],"author":{"name":"lijinchao2007"},"license":"BSD-2-Clause","bugs":{"url":"https://github.com/npmpool/authentication/issues"},"homepage":"https://github.com/npmpool/authentication","_id":"authentication@0.0.1","_shasum":"bb10daa92a85b797adf5d9b27c8795e679f34def","_from":".","gitHead":"4ba236211b78875468778e48c46449e42b331be9","_npmVersion":"2.0.2","_nodeVersion":"0.10.22","_npmUser":{"name":"lijinchao2007","email":"lijinchao2007@163.com"},"maintainers":[{"name":"lijinchao2007","email":"lijinchao2007@163.com"}],"dist":{"shasum":"bb10daa92a85b797adf5d9b27c8795e679f34def","tarball":"http://registry.npmjs.org/authentication/-/authentication-0.0.1.tgz"}}
+55 error new={"name":"authentication","version":"0.0.1","description":"just like passport","main":"index.js","scripts":{"test":"node ./test/index.js"},"repository":{"type":"git","url":"git@github.com:npmpool/authentication.git"},"keywords":["passport","authentication"],"author":{"name":"lijinchao2007"},"license":"BSD-2-Clause","bugs":{"url":"https://github.com/npmpool/authentication/issues"},"homepage":"https://github.com/npmpool/authentication","readme":"ERROR: No README data found!","_id":"authentication@0.0.1","_shasum":"5666cb78d49d0fbd92bf49412e6485c32e29f7e0","_from":".","gitHead":"4ae2905f5573da0fb4a866858f3df4a9127d091e","_npmVersion":"2.0.2","_nodeVersion":"0.10.22","_npmUser":{"name":"lijinchao2007","email":"lijinchao2007@163.com"},"maintainers":[{"name":"lijinchao2007","email":"lijinchao2007@163.com"}],"dist":{"shasum":"5666cb78d49d0fbd92bf49412e6485c32e29f7e0","tarball":"http://registry.npmjs.org/authentication/-/authentication-0.0.1.tgz"}}: authentication
+56 error If you need help, you may report this error at:
+56 error     <http://github.com/npm/npm/issues>
+57 verbose exit [ 1, true ]
